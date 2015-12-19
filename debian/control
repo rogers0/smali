@@ -1,0 +1,28 @@
+Source: smali
+Section: java
+Priority: optional
+Maintainer: Roger Shimizu <rogershimizu@gmail.com>
+Build-Depends: debhelper (>= 9), default-jdk (>= 2:1.7), gradle-debian-helper, javahelper, libjgit-java
+Standards-Version: 3.9.6
+Vcs-Git: git://github.com/rogers0/smali.git
+Vcs-Browser: https://github.com/rogers0/smali
+Homepage: https://github.com/JesusFreke/smali/wiki
+
+Package: smali
+Architecture: all
+# Pre-Depends: <comma-separated list of packages>
+Depends: ${misc:Depends}, default-jre-headless | default-jre
+# Recommends: <comma-separated list of packages>
+# Suggests: <comma-separated list of packages>
+# Provides: <comma-separated list of packages>
+# Replaces: <comma-separated list of packages>
+Description: Assembler/disassembler for Android's dex format
+ smali/baksmali is an assembler/disassembler for the dex 
+ format used by dalvik, Android's Java VM implementation. 
+ The syntax is loosely based on Jasmin's/dedexer's syntax, 
+ and supports the full functionality of the dex format 
+ (annotations, debug info, line info, etc.) 
+ .
+ The names "smali" and "baksmali" are the Icelandic equivalents
+ of "assembler" and "disassembler" respectively. Why Icelandic
+ you ask? Because dalvik was named for an Icelandic fishing village.
